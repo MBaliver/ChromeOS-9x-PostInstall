@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # ----------------------------- VARIÁVEIS ----------------------------- #
 
-URL_CITRIX="https://drive.google.com/u/0/uc?id=1wFSyxPJeV7F4SB8DTEsMf9qhdN8aD8jU&export=download"
+CITRIX_FILEID="1wFSyxPJeV7F4SB8DTEsMf9qhdN8aD8jU"
+CITRIX_FILENAME="citrix.deb"
+DIRETORIO_DOWNLOADS="/mnt/chromeos/MyFiles/Downloads"
 
-DIRETORIO_DOWNLOADS="/mnt/chromeos/MyFiles/Downloads/Apps"
+
 
 # ---------------------------------------------------------------------- #
 
@@ -23,7 +25,12 @@ sudo apt update -y
 
 ## Download e instalaçao de programas externos ##
 mkdir "$DIRETORIO_DOWNLOADS"
-wget --no-check-certificate "$URL_CITRIX" -O citrix.deb -P "$DIRETORIO_DOWNLOADS"
+
+wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$CITRIX_FILEID -O- \
+     | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
+
+wget --load-cookies cookies.txt -O $CITRIX_FILENAME \
+     'https://docs.google.com/uc?export=download&id='$CITRIX_FILEID'&confirm='$(<confirm.txt)
 
 ## Instalando pacotes .deb baixados na sessão anterior ##
 sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
@@ -45,6 +52,7 @@ sudo flatpak install flathub -y com.skype.Client
 sudo flatpak install flathub -y io.github.lainsce.DotMatrix
 sudo flatpak install flathub -y io.designer.GravitDesigner
 
+
 # ---------------------------------------------------------------------- #
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
@@ -53,4 +61,5 @@ sudo apt update && sudo apt dist-upgrade -y
 flatpak update
 sudo apt autoclean
 sudo apt autoremove -y
+rm /mnt/chromeos/MyFiles/Downloads/*.deb
 # ---------------------------------------------------------------------- #
