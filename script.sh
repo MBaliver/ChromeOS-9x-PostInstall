@@ -34,20 +34,21 @@ sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 ## Instalando pacotes Flatpak ##
 
 sudo apt install flatpak -y
-sud flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
-sudo flatpak install flathub org.kde.kdenlive -y
-sudo flatpak install flathub org.glimpse_editor.Glimpse -y
-sudo flatpak install flathub com.valvesoftware.Steam -y
-sudo flatpak install flathub org.videolan.VLC -y
-sudo flatpak install flathub org.inkscape.Inkscape -y
-sudo flatpak install flathub io.mgba.mGBA -y
-sudo flatpak install flathub io.mrarm.mcpelauncher -y
-sudo flatpak install flathub nl.hjdskes.gcolor3 -y
-sudo flatpak install flathub org.gnome.design.Contrast -y
-sudo flatpak install flathub de.haeckerfelix.Fragments -y
-sudo flatpak install flathub com.skype.Client -y
-sudo flatpak install flathub io.github.lainsce.DotMatrix -y
-sudo flatpak install flathub io.designer.GravitDesigner -y
+sudo flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
+sudo flatpak install -y org.kde.kdenlive
+sudo flatpak install -y org.kde.kdenlive 
+sudo flatpak install -y org.glimpse_editor.Glimpse 
+sudo flatpak install -y com.valvesoftware.Steam
+sudo flatpak install -y org.videolan.VLC
+sudo flatpak install -y org.inkscape.Inkscape
+sudo flatpak install -y io.mgba.mGBA
+sudo flatpak install -y io.mrarm.mcpelauncher
+sudo flatpak install -y nl.hjdskes.gcolor3
+sudo flatpak install -y org.gnome.design.Contrast
+sudo flatpak install -y de.haeckerfelix.Fragments
+sudo flatpak install -y com.skype.Client
+sudo flatpak install -y io.github.lainsce.DotMatrix
+sudo flatpak install -y io.designer.GravitDesigner
 
 # ---------------------------------------------------------------------- #
 
