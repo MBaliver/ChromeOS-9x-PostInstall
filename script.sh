@@ -48,6 +48,7 @@ sudo flatpak install -y Fragments
 sudo flatpak install -y Skype
 sudo flatpak install -y DotMatrix
 sudo flatpak install -y GravitDesigner
+sudo flatpak install -y Simplenote
 
 # ---------------------------------------------------------------------- #
 
