@@ -3,7 +3,7 @@
 
 URL_CITRIX="https://drive.google.com/file/d/1wFSyxPJeV7F4SB8DTEsMf9qhdN8aD8jU/view?usp=sharing"
 
-DIRETORIO_DOWNLOADS="$HOME/Downloads/Apps"
+DIRETORIO_DOWNLOADS="/mnt/chromeos/MyFiles/Downloads/Apps"
 
 # ---------------------------------------------------------------------- #
 
