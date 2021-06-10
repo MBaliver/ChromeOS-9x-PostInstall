@@ -39,6 +39,7 @@ sudo flatpak install flathub org.kde.kdenlive -y
 sudo flatpak install flathub org.glimpse_editor.Glimpse -y
 sudo flatpak install flathub com.valvesoftware.Steam -y
 sudo flatpak install flathub org.videolan.VLC -y
+sudo flatpak install flathub org.inkscape.Inkscape -y
 sudo flatpak install flathub io.mgba.mGBA -y
 sudo flatpak install flathub io.mrarm.mcpelauncher -y
 sudo flatpak install flathub nl.hjdskes.gcolor3 -y
