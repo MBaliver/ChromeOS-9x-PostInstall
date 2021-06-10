@@ -34,21 +34,20 @@ sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 ## Instalando pacotes Flatpak ##
 
 sudo apt install flatpak -y
-sudo flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
-sudo flatpak install -y org.kde.kdenlive
-sudo flatpak install -y org.kde.kdenlive 
-sudo flatpak install -y org.glimpse_editor.Glimpse 
-sudo flatpak install -y com.valvesoftware.Steam
-sudo flatpak install -y org.videolan.VLC
-sudo flatpak install -y org.inkscape.Inkscape
-sudo flatpak install -y io.mgba.mGBA
-sudo flatpak install -y io.mrarm.mcpelauncher
-sudo flatpak install -y nl.hjdskes.gcolor3
-sudo flatpak install -y org.gnome.design.Contrast
-sudo flatpak install -y de.haeckerfelix.Fragments
-sudo flatpak install -y com.skype.Client
-sudo flatpak install -y io.github.lainsce.DotMatrix
-sudo flatpak install -y io.designer.GravitDesigner
+sudo flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install -y kdenlive
+sudo flatpak install -y Glimpse 
+sudo flatpak install -y Steam
+sudo flatpak install -y VLC
+sudo flatpak install -y Inkscape
+sudo flatpak install -y mGBA
+sudo flatpak install -y mcpelauncher
+sudo flatpak install -y gcolor3
+sudo flatpak install -y Contrast
+sudo flatpak install -y Fragments
+sudo flatpak install -y Skype
+sudo flatpak install -y DotMatrix
+sudo flatpak install -y GravitDesigner
 
 # ---------------------------------------------------------------------- #
 
