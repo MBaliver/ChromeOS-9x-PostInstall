@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ----------------------------- VARIÁVEIS ----------------------------- #
 
-URL_CITRIX="https://drive.google.com/file/d/1wFSyxPJeV7F4SB8DTEsMf9qhdN8aD8jU/view?usp=sharing"
+URL_CITRIX="https://drive.google.com/u/0/uc?id=1wFSyxPJeV7F4SB8DTEsMf9qhdN8aD8jU&export=download"
 
 DIRETORIO_DOWNLOADS="/mnt/chromeos/MyFiles/Downloads/Apps"
 
